@@ -1,7 +1,13 @@
 .join {
-  margin-left: 70px;
-  margin-top: 12px;
-  margin-bottom: 40px;
+  text-align: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 40px;
+  }
 
   &__tittle {
     font-style: normal;
@@ -13,13 +19,23 @@
 
     color: var(--white-text);
 
+    text-align: center;
+    margin-top: 60px;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 }
 
 .join-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   &__link {
     display: block;

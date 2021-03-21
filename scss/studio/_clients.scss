@@ -1,6 +1,11 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
   &__title {
     color: var(--black-text);
     font-style: normal;
@@ -10,27 +15,44 @@
     text-align: center;
     letter-spacing: 0.03em;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--project-gap));
+  margin-top: calc(-1 * var(--project-gap));
+
+  &__items {
+    flex-basis: calc(100% / 2 - var(--project-gap));
+    margin-left: var(--project-gap);
+    margin-top: var(--project-gap);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - var(--project-gap));
+      margin-left: var(--project-gap);
+      margin-top: var(--project-gap);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 6 - var(--project-gap));
+      margin-left: var(--project-gap);
+    }
+  }
 
   &__icons {
     fill: currentColor;
   }
-  &__items {
-    margin-right: 30px;
 
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
   &__link {
     display: flex;
     color: var(--gray-sprite);
-    width: 170px;
     height: 90px;
     justify-content: center;
     align-items: center;

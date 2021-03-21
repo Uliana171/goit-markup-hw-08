@@ -1,6 +1,15 @@
 .subscribe {
-  margin-top: 12px;
-  margin-left: 93px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 93px;
+  }
+
   &__tittle {
     color: var(--white-text);
     font-size: 14px;
@@ -10,17 +19,27 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    text-align: left;
+    text-align: center;
+    margin-top: 60px;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+      margin-top: 0px;
+    }
   }
 }
 
 .subscribe-container {
-  display: flex;
-  position: relative;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    position: relative;
+  }
 
   &__button {
     /* у футері */
-    margin-left: 12px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+    }
   }
 }

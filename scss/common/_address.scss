@@ -1,6 +1,14 @@
 .address {
   min-width: 81px;
 
+  text-align: center;
+
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+
   &__text {
     color: var(--white-text);
     font-weight: 400;
