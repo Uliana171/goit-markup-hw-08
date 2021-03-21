@@ -1,0 +1,57 @@
+.agree-container {
+  margin-bottom: 30px;
+  margin-left: 12px;
+
+  position: relative;
+}
+
+.agree-label{
+  color: var(--modal-text);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+
+  &__link{
+    color: var(--blue-text);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+  }
+
+  &__icon{
+    border: 2px solid var(--black);
+    border-radius: 4px;
+    cursor: pointer;
+
+    position: absolute;
+    left:0px;
+    top: 2px;
+
+    display: inline-block;
+  }
+
+  &__checkbox {
+    width: 16px;
+    height: 14px;
+  }
+}
+
+.agree-label__checkbox:checked + .agree-label__icon use{
+  display: block;
+}
+
+.agree-label__checkbox:checked + .agree-label__icon{
+  border: none;
+}
+
+.agree-label__icon use {
+  display: none;
+}

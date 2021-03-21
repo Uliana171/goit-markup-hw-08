@@ -1,0 +1,95 @@
+.form__item{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.form__label{
+  color: var(--modal-text);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  margin-bottom: 4px;
+}
+
+.form__input{
+  min-height: 40px;
+
+  padding-left: 42px;
+  
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+    &:hover,
+    &:focus,
+    &:active{
+        border: 1px solid var(--blue-text);
+        outline: none;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover +.form__icon,   
+    &:focus +.form__icon,
+    &:active +.form__icon{
+        fill: var(--blue-text);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+.form__icon{
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+
+  left: 12px;
+  bottom: 11px;
+
+    &:hover,
+    &:focus,
+    &:active{
+        fill: var(--blue-text);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+
+
+
+.form__coment::placeholder{
+  /* до placeholder можна застосувати тільки оформлення тексту */
+  color: rgba(117, 117, 117, 0.5);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.form__coment{
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  margin-bottom: 10px;
+
+    &:hover,
+    &:focus,
+    &:active{
+        border: 1px solid var(--blue-text);
+        outline: none;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+

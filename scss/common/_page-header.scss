@@ -1,0 +1,29 @@
+.page-header {
+  border-bottom: 1px solid var(--gray-line);
+  justify-content: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__container {
+    display: flex;
+    align-items: center; /* центрувати по вертикалі */
+
+    @media screen and (max-width: 767px) {
+      max-width: 480px;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      justify-content: space-between;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 26px;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  &:active,
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+    transform: scaleX(1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__web {
+    color: var(--blue-text);
+  }
+}

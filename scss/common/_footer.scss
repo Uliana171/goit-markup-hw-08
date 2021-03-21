@@ -1,0 +1,16 @@
+.footer {
+  align-items: flex-start;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  background-color: var(--grphite-background);
+
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

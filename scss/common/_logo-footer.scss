@@ -1,0 +1,20 @@
+.logo__footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo__web {
+  color: var(--blue-text);
+}
+
+.logo__studio {
+  color: var(--white-text);
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+    transform: scaleX(1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
