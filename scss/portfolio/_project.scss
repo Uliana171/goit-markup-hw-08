@@ -1,19 +1,19 @@
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 
-  margin-top: calc(-1 * var(--project-gap));
-  margin-left: calc(-1 * var(--project-gap));
-
-  // @media screen and (max-width: 767px) {
-  //   display: block;
-  // }
+  // margin-top: calc(-1 * var(--project-gap));
+  // margin-left: calc(-1 * var(--project-gap));
 }
 .project-item {
+  &:not(:last-child) {
+    margin-top: 30px;
+  }
+
   /* project-gap = 30px в списку перемінних */
-  flex-basis: calc(100% / 3 - var(--project-gap));
-  margin-left: var(--project-gap);
-  margin-top: var(--project-gap);
+  // flex-basis: calc(100% / 3 - var(--project-gap));
+  // margin-left: var(--project-gap);
+  // margin-top: var(--project-gap);
   background: var(--white-background);
 
   &__link {
@@ -50,8 +50,8 @@
   }
 
   &__thumb {
-    min-width: 370px;
-    min-height: 290px;
+    // min-width: 370px;
+    // min-height: 290px;
 
     position: relative;
     overflow: hidden;

@@ -1422,22 +1422,50 @@ a {
 }
 
 .main-conteiner {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-conteiner {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 51px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-btn {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-btn {
+    margin-bottom: 50px;
+  }
 }
 
 .list-btn__item {
   margin-right: 8px;
+  height: 38px;
+}
+
+@media screen and (max-width: 767px) {
+  .list-btn__item {
+    -ms-flex-preferred-size: calc(100% / 3 - var(--project-gap));
+        flex-basis: calc(100% / 3 - var(--project-gap));
+  }
 }
 
 .list-btn__button {
