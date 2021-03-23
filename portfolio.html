@@ -22,17 +22,23 @@
                 <span class="logo__web">Web</span>Studio
             </a>
     
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-icon" width="24" height="16">
+                    <use href="./images/sprite.svg#mobile-menu"></use>
+                </svg>
+            </button>
+    
             <nav class="page-header__nav">
                 <ul class="navigation-list">
     
-                    <li class="navigation-list__item"><a class="navigation-list__link" href="./index.html">Студия</a></li>
-                    <li class="navigation-list__item"><a class="navigation-list__link current" href="./portfolio.html">Портфолио</a>
+                    <li class="navigation-list__item"><a class="navigation-list__link current"
+                            href="./index.html">Студия</a></li>
+                    <li class="navigation-list__item"><a class="navigation-list__link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="navigation-list__item"><a class="navigation-list__link" href="#">Контакты</a></li>
     
                 </ul>
             </nav>
-    
     
             <ul class="contacts-list">
     
@@ -283,66 +289,72 @@
     
         <div class="container footer__container">
     
-            <div class="">
-                <a class="logo footer__logo" href="#"><span class="logo__web">Web</span><span
-                        class="logo__studio">Studio</span></a>
+            <div class="footer__tablet-container">
     
-                <address class="address">
+                <div class="footer__content">
+                    <a class="logo logo__footer" href="#">
+                        <span class="logo__web">Web</span>
+                        <span class="logo__studio logo__studio-- ">Studio</span>
+                    </a>
     
-                    <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+                    <address class="address">
     
-                    <ul class="address-list">
+                        <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
     
-                        <li class="address-list__item"><a class="address-list__link"
-                                href="mailto:info@example.com">info@example.com</a></address-list>
+                        <ul class="address-list">
     
-                        <li class="address-list__item"><a class="address-list__link" href="tel:+380991111111">+38 099 111 11
-                                11</a></li>
+                            <li class="address-list__item"><a class="address-list__link"
+                                    href="mailto:info@example.com">info@example.com</a></address-list>
+    
+                            <li class="address-list__item"><a class="address-list__link" href="tel:+380991111111">+38 099
+                                    111 11 11</a></li>
+    
+                        </ul>
+    
+                    </address>
+                </div>
+    
+                <div class="join">
+    
+                    <h3 class="join__tittle">присоединяйтесь</h3>
+    
+                    <ul class="join-list">
+    
+                        <li class="join-list__item">
+                            <a class="join-list__link" href="hptt://www.instagram.com">
+                                <svg class="join-list__icon" width="20px" height="20px">
+                                    <use href="./images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li class="join-list__item">
+                            <a class="join-list__link" href="hptt://www.twitter.com">
+                                <svg class="join-list__icon" width="20px" height="20px">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li class="join-list__item">
+                            <a class="join-list__link" href="hptt://www.facebook.com">
+                                <svg class="join-list__icon" width="20px" height="20px">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li class="join-list__item">
+                            <a class="join-list__link" href="hptt://www.linkedin.com">
+                                <svg class="join-list__icon" width="20px" height="20px">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
     
                     </ul>
     
-                </address>
-            </div>
-    
-            <div class="join">
-    
-                <h3 class="join__tittle">присоединяйтесь</h3>
-    
-                <ul class="join-list">
-    
-                    <li class="join-list__item">
-                        <a class="join-list__link" href="hptt://www.instagram.com">
-                            <svg class="join-list__icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-    
-                    <li class="join-list__item">
-                        <a class="join-list__link" href="hptt://www.twitter.com">
-                            <svg class="join-list__icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-    
-                    <li class="join-list__item">
-                        <a class="join-list__link" href="hptt://www.facebook.com">
-                            <svg class="join-list__icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-    
-                    <li class="join-list__item">
-                        <a class="join-list__link" href="hptt://www.linkedin.com">
-                            <svg class="join-list__icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-    
-                </ul>
+                </div>
     
             </div>
     
