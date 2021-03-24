@@ -1,23 +1,46 @@
 .project-list {
-  // display: flex;
-  // flex-wrap: wrap;
+  padding-bottom: 60px;
 
-  // margin-top: calc(-1 * var(--project-gap));
-  // margin-left: calc(-1 * var(--project-gap));
-}
-.project-item {
-  &:not(:last-child) {
-    margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: calc(-1 * var(--project-gap));
+    margin-left: calc(-1 * var(--project-gap));
   }
 
-  /* project-gap = 30px в списку перемінних */
-  // flex-basis: calc(100% / 3 - var(--project-gap));
-  // margin-left: var(--project-gap);
-  // margin-top: var(--project-gap);
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+  }
+}
+
+.project-item {
+  margin-top: 30px;
   background: var(--white-background);
 
+  @media screen and (min-width: 768px) {
+    /* project-gap = 30px в списку перемінних */
+    flex-basis: calc(100% / 2 - var(--project-gap));
+    margin-left: var(--project-gap);
+    margin-top: var(--project-gap);
+  }
+
+  @media screen and (min-width: 1200px) {
+    /* project-gap = 30px в списку перемінних */
+    flex-basis: calc(100% / 3 - var(--project-gap));
+    margin-left: var(--project-gap);
+    margin-top: var(--project-gap);
+  }
+
+  &__thumb {
+    // min-width: 370px;
+    // min-height: 290px;
+
+    position: relative;
+    overflow: hidden;
+  }
+
   &__link {
-    display: block;
     &:hover,
     &:focus {
       flex-wrap: wrap;
@@ -47,14 +70,6 @@
     font-size: 16px;
     line-height: 30px;
     text-align: left;
-  }
-
-  &__thumb {
-    // min-width: 370px;
-    // min-height: 290px;
-
-    position: relative;
-    overflow: hidden;
   }
 
   &__description {
