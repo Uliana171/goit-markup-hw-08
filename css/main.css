@@ -875,7 +875,6 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
 }
 
 .btn-close {
@@ -1038,29 +1037,48 @@ a {
 
 .agree-container {
   margin-bottom: 30px;
-  margin-left: 12px;
   position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .agree-container {
+    margin-left: 12px;
+  }
 }
 
 .agree-label {
   color: var(--modal-text);
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .agree-label {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .agree-label__link {
   color: var(--blue-text);
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+@media screen and (min-width: 1200px) {
+  .agree-label__link {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .agree-label__icon {
@@ -1069,8 +1087,14 @@ a {
   cursor: pointer;
   position: absolute;
   left: 0px;
-  top: 2px;
+  top: 1px;
   display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+  .agree-label__icon {
+    top: 2px;
+  }
 }
 
 .agree-label__checkbox {
