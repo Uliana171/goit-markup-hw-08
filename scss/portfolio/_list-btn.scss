@@ -1,20 +1,22 @@
 .list-btn {
-  display: inline-flex;
-  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
   justify-content: left;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     justify-content: center;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 }
 
 .list-btn__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 .list-btn__button {
   background-color: var(--button-background);
